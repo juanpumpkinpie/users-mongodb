@@ -8,18 +8,29 @@ mongoose.connect("mongodb://localhost/my_database", {
 
 User.create(
   {
-    name: "Juan Pumpkinpie",
-    body: "Admin",
+    name: "Izabela Zajecka",
+    body: "Wife",
   },
   (error, User) => {
     console.log(error, User);
   }
 );
 
-//generate:
-// null {
-//     _id: 5ff1f353e8bdf4c9a4d66cf8, Id
-//     name: 'Juan Pumpkinpie',
-//     body: 'Admin',
-//     __v: 0
-//   }
+User.create(
+  {
+    name: "whitehat4u",
+    body: "Company",
+  },
+  (error, User) => {
+    console.log(error, User);
+  }
+);
+
+User.find(
+  {
+    name: /Ju/,
+  },
+  (error, User) => {
+    console.log(error, User);
+  }
+);

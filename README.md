@@ -19,7 +19,8 @@ Create, Read, upate and Delete Users using React/NodeJs and MongoDB
 
 The database is connected Local in MongoDb, which also means you can access quickly to the model Data collections information into the folder: /models/
 
-- Collection_Name: Users.js
+- Database_Name: my_database
+- Collection_Name: Users
 
 # 🎃 How run the project?
 
