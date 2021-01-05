@@ -16,12 +16,17 @@ app.listen(port, () => {
 });
 
 mongoose.connect(
-  "mongodb+srv://juan-admin:<password>@cluster0.k81xt.mongodb.net/users?retryWrites=true&w=majority",
+  "mongodb+srv://<admin>:<password>@cluster0.k81xt.mongodb.net/users?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }
 );
+//LOCAL
+// mongoose.connect("mongodb://localhost/my_database", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./frontend/build/index.html"));

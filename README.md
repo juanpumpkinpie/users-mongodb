@@ -21,12 +21,13 @@ Create, Read, upate and Delete Users using React/NodeJs and MongoDB
 - Remember run: mongod --config /usr/local/etc/mongod.conf in your local environment
 - The database is connected Local in MongoDb, which also means you can access quickly to the model Data collections information into the folder: /models/
 
-* Database_Name: my_database
+* Database_Name: my_database / local
+* Database_Name: users / cluster online
 * Collection_Name: Users
 
 # 🎃 How run the project?
 
-Use _npm start_ or _yarn start_ to run the project in local
+Use _npm start_ or _yarn start_ to run the project in local, fills the forms for the data base and press send, check your records in the DB
 
 ---
 
