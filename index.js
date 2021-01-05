@@ -16,7 +16,7 @@ app.listen(port, () => {
 });
 
 mongoose.connect(
-  "mongodb+srv://juan-admin:Vimeo2020@cluster0.k81xt.mongodb.net/users?retryWrites=true&w=majority",
+  "mongodb+srv://juan-admin:<password>@cluster0.k81xt.mongodb.net/users?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
